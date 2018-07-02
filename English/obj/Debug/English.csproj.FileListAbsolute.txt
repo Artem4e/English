@@ -1,0 +1,12 @@
+C:\Users\artch\source\repos\English\English\bin\Debug\English.exe.config
+C:\Users\artch\source\repos\English\English\bin\Debug\English.exe
+C:\Users\artch\source\repos\English\English\bin\Debug\English.pdb
+C:\Users\artch\source\repos\English\English\obj\Debug\English.csprojResolveAssemblyReference.cache
+C:\Users\artch\source\repos\English\English\obj\Debug\English.Form1.resources
+C:\Users\artch\source\repos\English\English\obj\Debug\English.Properties.Resources.resources
+C:\Users\artch\source\repos\English\English\obj\Debug\English.csproj.GenerateResource.cache
+C:\Users\artch\source\repos\English\English\obj\Debug\English.csproj.CoreCompileInputs.cache
+C:\Users\artch\source\repos\English\English\obj\Debug\English.exe
+C:\Users\artch\source\repos\English\English\obj\Debug\English.pdb
+C:\Users\artch\source\repos\English\English\obj\Debug\English.Form2.resources
+C:\Users\artch\source\repos\English\English\obj\Debug\English.InputWords.resources
