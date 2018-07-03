@@ -22,7 +22,7 @@ namespace English
         private void button1_Click(object sender, EventArgs e)
         {
             textBox4.Text += textBox1.Text + "%" + textBox2.Text+"\r\n";
-            Words += textBox4.Text;
+            Words += textBox1.Text + "%" + textBox2.Text + "\r\n";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -62,6 +62,11 @@ namespace English
                 else MessageBox.Show("Введите название!", "Ошибка!");
             }
             else MessageBox.Show("Файл пустой!", "Ошибка!");
+        }
+
+        private void InputWords_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

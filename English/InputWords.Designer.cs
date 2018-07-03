@@ -139,6 +139,7 @@
             this.Controls.Add(this.label1);
             this.Name = "InputWords";
             this.Text = "Добавление темы";
+            this.Load += new System.EventHandler(this.InputWords_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

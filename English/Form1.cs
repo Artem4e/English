@@ -53,6 +53,7 @@ namespace English
 
         private void buttonAnswer_Click(object sender, EventArgs e)
         {
+            label6.Text = "";
             try
             {
                 try
@@ -68,6 +69,7 @@ namespace English
                         dictionary.addWord(Index);
                         FalseAnswer++;
                         label3.Text = "Неправильно: " + FalseAnswer;
+                        label6.Text = dictionary.outR(Index);
                     }
                     label4.Text = "Осталось слов: " + dictionary.leng().ToString();
 
@@ -87,7 +89,7 @@ namespace English
             }
             catch (System.NullReferenceException)
             {
-                MessageBox.Show("Сначала выберите тему");
+                MessageBox.Show("Сначала выберите тему","Ошибка!");
             }
 
 }
@@ -122,6 +124,18 @@ namespace English
         {
             InputWords input = new InputWords();
             input.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                label6.Text = dictionary.outR(Index);
+            }
+            catch (System.NullReferenceException)
+            {
+                MessageBox.Show("Выберите тему", "Ошибка!");
+            }
         }
     }
 }

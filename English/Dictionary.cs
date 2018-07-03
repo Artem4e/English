@@ -15,17 +15,21 @@ namespace English
 
         public Dictionary(string path)
         {
-
-            List<string> AllWords = new List<string>();
-
-            FileStream file = new FileStream(path, FileMode.Open);
-            StreamReader stream = new StreamReader(file);
-            while (!stream.EndOfStream)
+            try
             {
-                AllWords.Add(stream.ReadLine().ToLower());
+
+                List<string> AllWords = new List<string>();
+
+                FileStream file = new FileStream(path, FileMode.Open);
+                StreamReader stream = new StreamReader(file);
+                while (!stream.EndOfStream)
+                {
+                    AllWords.Add(stream.ReadLine().ToLower());
+                }
+                fillingOutLists(AllWords);
+                file.Close();
             }
-            fillingOutLists(AllWords);
-            file.Close();
+            catch (System.ArgumentException){}
         }
 
         //Длина списка
@@ -50,12 +54,19 @@ namespace English
 
         public string outR(int i)
         {
-            return RusWords[i];
+            try
+            {
+                return RusWords[i];
+            }
+            catch (System.ArgumentOutOfRangeException) { return ""; }
         }
 
         public string outE(int i)
         {
+            try {
             return EngWords[i];
+            }
+            catch (System.ArgumentOutOfRangeException) { return ""; }
         }
 
         //Заполнение списков с Русскими и Английскими словами
