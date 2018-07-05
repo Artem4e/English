@@ -38,11 +38,16 @@ namespace English
 
         private void selectAtopic_Click(object sender, EventArgs e)
         {
+            //Очищаем счетчики слов
             form2 = new Form2();
             label1.Text = "Всего слов:";
             label2.Text = "Правильно: ";
             label3.Text = "Неправильно: ";
             label4.Text = "Осталось слов: ";
+
+            //Очищаем переменные счетчики
+            RightAnswer = 0;
+            FalseAnswer = 0;
 
             form2.ShowDialog();
             dictionary = new Dictionary(form2.patch);
@@ -81,6 +86,7 @@ namespace English
                         outWord();
                     }
                     else MessageBox.Show("Все слова введены верно");
+                        
                 }
                 catch (System.ArgumentOutOfRangeException)
                 {
